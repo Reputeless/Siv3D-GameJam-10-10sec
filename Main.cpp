@@ -1,4 +1,3 @@
-
 # include <Siv3D.hpp>
 
 struct Firework : IEffect
@@ -36,7 +35,7 @@ struct Firework : IEffect
 
 void Main()
 {
-	Window::SetTitle(L"10'00");
+	Window::SetTitle(L"10.00");
 
 	Stopwatch stopwatch;
 
@@ -44,7 +43,7 @@ void Main()
 
 	const Font font(50);
 
-	const Vec2 pos = font(L"00'00").regionCenter(Window::Center()).pos;
+	const Vec2 pos = font(L"00.00").regionCenter(Window::Center()).pos;
 
 	while (System::Update())
 	{
@@ -68,7 +67,7 @@ void Main()
 			effect.add<Firework>(Circular(200, Random(TwoPi)) + Window::Center(), 30);
 		}
 
-		font(L"{:0>2}'{:0>2}"_fmt, stopwatch.s(), stopwatch.ms() % 1000 / 10).draw(pos);
+		font(L"{:0>2}.{:0>2}"_fmt, stopwatch.s(), stopwatch.ms() % 1000 / 10).draw(pos);
 
 		if (effect.hasEffects())
 		{
