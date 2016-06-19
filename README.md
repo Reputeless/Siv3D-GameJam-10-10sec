@@ -4,4 +4,4 @@
 #### 作者  
 Reputeless (https://twitter.com/Reputeless)
 
-![スクリーンショット](10sec.png "スクリーンショット")
+![スクリーンショット](10_00.png "スクリーンショット")
