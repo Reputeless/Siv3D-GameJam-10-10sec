@@ -1,4 +1,3 @@
-
 # include <Siv3D.hpp>
 
 struct Firework : IEffect
@@ -36,6 +35,8 @@ struct Firework : IEffect
 
 void Main()
 {
+	Window::SetTitle(L"10:00");
+
 	Stopwatch stopwatch;
 
 	Effect effect;
